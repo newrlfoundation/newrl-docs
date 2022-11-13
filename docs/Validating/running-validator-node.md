@@ -88,9 +88,18 @@ Nodes created using AWS image can be update by mearely rebooting the instance fr
 Follow the steps to update nodes created from source
 
 
-1. Login to screen session and stop the process by pressing Ctrl + C. Sometimes the process need to be force killed by running `pkill -9 python` outside of screen
-2. ```
-    cd newrl
-    scripts/install.sh mainnet
-    scripts/start.sh mainnet --fullnode
-    ```
+1. Login to your VPS
+2. Check Your NEWRL screen number and screen name
+```screen -list ```
+3. Kill your NEWRL screen
+```screen -S (screen_number.screen_name) -X kill```
+4. Create new screen
+```screen -S newrl```
+5. Pull & Update NEWRL nodes
+```
+cd newrl-venv
+source newrl-venv/bin/activate
+cd newrl
+git pull
+scripts/start.sh mainnet
+```
