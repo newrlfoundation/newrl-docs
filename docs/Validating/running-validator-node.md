@@ -94,3 +94,24 @@ Follow the steps to update nodes created from source
     scripts/install.sh mainnet
     scripts/start.sh mainnet --fullnode
     ```
+
+# Re-install a node
+
+To re-install chain data on a node on a node with issues, follow the instructions below
+
+### Running no screen session
+Stop newrl node
+```sh
+cd newrl/data_mainnet
+rm newrl.db
+scripts/start.sh mainnet
+```
+
+### Running from AWS image
+
+```sh
+sudo service newrl stop # Ctrl+C if not stopping in few seconds
+cd newrl/data_mainnet
+sudo rm newrl.db
+sudo service newrl start
+```
