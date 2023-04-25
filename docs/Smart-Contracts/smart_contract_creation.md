@@ -55,4 +55,4 @@ Below represents a transaction for creating a new smart contract:
 ```
 ### signatories
 Key value pair of function name as the key and wallet address which can call these methods as value and `null` in case function can be called by any wallet. 
-After successful submission of the valid transaction smart contraact will be dpeloyed.
+After successful submission of the valid transaction smart contract will be dpeloyed.
