@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /smart-contracts/creation
+slug: /smart-contracts/verification contract
 ---
 
 # Verification Smart Contract
