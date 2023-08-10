@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /smart-contracts/verification contract
+slug: /smart-contracts/verification-contract
 ---
 
 # Verification Smart Contract
@@ -20,12 +20,12 @@ Key Advantages:
 Below represents transaction version for creating a new verification:
 
 ### Add verification 
-Make a raw transaction to call verification smart contract using API mentioned below using curl. Please replace signers, asset if, verifiers address, doc_hash and link list, remarks and deletable after.
+Make a raw transaction to call verification smart contract using API mentioned below using curl. Please replace signers, asset if, verifiers address, doc_hash and link list, remarks and deletable after. Note that the default verification contract address hosted is 'ctef09aa4da1af4f97faeb87d4f8e7fd3e1a031392'
 ```
 curl --location 'localhost:4018/call-sc' \
 --header 'Content-Type: application/json' \
 --data '{
-   "sc_address":"ct2f2965d549732903dc3ad63a527b53bf2fa84f00",
+   "sc_address":"ctef09aa4da1af4f97faeb87d4f8e7fd3e1a031392",
    "function_called":"add_verification",
    "signers":[
       "0xd831a46f5dd3db77a27de82e14b70fc34695fa88"
